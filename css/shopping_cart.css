@@ -1,0 +1,174 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+object {
+    width: 100%;
+    height:201.5px;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+section{
+    width:88%;
+    margin: auto;
+}
+main{
+    background-color: rgb(247, 243, 243);
+}
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    margin-left: 100px;
+}
+table tr:nth-child(1){
+    background-color: rgb(95, 95, 189);
+    height: 40px;
+}
+tr,th,td{
+    border: 1px solid black;
+}
+table tr td:nth-child(1){
+    width: 60px;
+}
+table tr td:nth-child(2){
+    width: 85px;
+    padding-top:5px;
+}
+table tr td:nth-child(4),table tr td:nth-child(6),table tr td:nth-child(7){
+    width: 60px;
+}
+table tr td:nth-child(5){
+    width: 110px;
+}
+table tr td:nth-child(6){
+    width: 90px;
+}
+table tr td:nth-child(5) input:nth-child(2n+1){
+    background-color: #d3d1d1;
+    width: 20px;
+    text-align: center;
+    height: 25px;
+}
+table tr td:nth-child(5) input:nth-child(2n){
+    width:40px;
+    height: 20px;
+    text-align: center;
+}
+table tr td:nth-child(7) input{
+    background-color: #d3d1d1;
+    width: 50px;
+    height: 25px;
+}
+table img{
+    width: 70px;
+}
+.deleteSelect{
+    margin-left: 100px;
+    margin-top:20px;
+    width: 80px;
+    height: 40px;
+    background-color: rgb(211, 203, 203);
+}
+.allCount{
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+main .success{
+    padding-top:20px;
+    padding-left: 130px;
+    margin-bottom:30px;
+    font-size: 28px;
+    color: rgb(16, 151, 16);
+    background-image: url(../img/other_buy/timg.jpeg);
+    background-size: 50px;
+    background-repeat:no-repeat;
+    background-position: 75px 18px;
+}
+main ul{
+    width:88%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+main ul li:nth-child(1){
+    display: flex;
+}
+main ul li:nth-child(1) img{
+    width: 65px;
+    margin-right: 20px;
+}
+main ul li:nth-child(1) p{
+    padding-bottom:10px;
+}
+main ul li:nth-child(1) span{
+    color: gray;
+
+}
+main ul li:nth-child(2){
+    margin-top:30px;
+}
+main ul li:nth-child(2) a:nth-child(1){
+    background-color: white;
+    color: red;
+    padding:12px;
+    border: 1px solid white;
+}
+main ul li:nth-child(2) a:nth-child(1):hover{
+    border: 1px solid red;
+}
+main ul li:nth-child(2) a:nth-child(2){
+    background-color:red;
+    color:white;
+    padding:12px;
+    margin-left: 10px;
+}
+section{
+    height:340px;
+}
+section h4{
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+section ul{
+    grid-row-gap:24px; 
+    display: grid;
+    grid-template-rows:105px 105px;
+    grid-template-columns: repeat(4,320px);
+}
+section ul li{
+    display: flex;
+    font-size:14px;
+}
+section ul li img{
+    margin-right: 10px;
+}
+section ul li span{
+    color: red;
+    font-weight: bold;
+    display: block;
+    margin-top:5px;
+    margin-bottom: 15px;
+    
+}
+section ul li a{
+    color: red;
+    border: 1px solid red;
+    padding:5px 10px 5px 33px;
+    background-image: url(../img/other_buy/car.png);
+    background-size: 20px;
+    background-repeat:no-repeat;
+    background-position:12px 6px;
+}
+section ul li a:hover{
+    color: blueviolet;
+}
+.foot{
+    width: 100%;
+    height: 486px;
+}

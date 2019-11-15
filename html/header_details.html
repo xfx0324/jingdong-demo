@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: gray;
+            font-size: 14px;
+        }
+
+        .head {
+            width: 100%;
+        }
+
+        .head ul:nth-child(1) {
+            background-color: rgb(243, 237, 237);
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            color: gray;
+            height: 50px;
+            font-weight: bold;
+            align-items: center;
+        }
+
+        .head ul:nth-child(1) li:nth-child(1) {
+            background-image: url(../img/icon_location.png);
+            background-repeat: no-repeat;
+            padding-left: 20px;
+        }
+
+        .head ul:nth-child(1) a {
+            color: gray;
+            padding: 0 7px;
+            font-size: 16px;
+        }
+        .head ul:nth-child(1) a:hover{
+            color: red;
+        }
+        .head ul:nth-child(2) {
+
+            width: 100%;
+            height: 108px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        .head ul:nth-child(2) li:nth-child(1){
+            position: relative;
+        }
+        .head ul:nth-child(2) li:nth-child(1) input:nth-child(1) {
+            width: 390px;
+            height: 34px;
+            border-radius: 5px;
+            border: 1.2px solid rgb(224, 220, 220);
+            text-indent: 10px;
+        }
+
+        .head ul:nth-child(2) li:nth-child(1) input:nth-child(1)-placeholder {
+            color: rgb(224, 220, 220);
+        }
+
+        .head ul:nth-child(2) li:nth-child(1) input:nth-child(2) {
+            width: 60px;
+            height: 36px;
+            color: rgb(224, 46, 46);
+            background-color: rgb(224, 46, 46);
+            border-radius: 6px;
+            border: none;
+        }
+        .head ul:nth-child(2) li:nth-child(1) input:nth-child(2):hover{
+            color:rgb(207, 88, 88);
+            background-color: rgb(207, 88, 88);
+        }
+        i{
+            position: absolute;
+            left: 415px;
+            bottom: 10px;
+            color: white;
+        }
+        .head ul:nth-child(2) li:nth-child(2) {
+            padding-top: 8px;
+            padding-bottom: 16px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="head">
+        <ul>
+            <li>杭州</li>
+            <li>
+                <a href="login.html" target="_blank">你好，请登录</a>
+                <a href="register.html" target="_blank">免费注册</a> |
+                <a href='shopping_cart.html' target="_blank">我的购物车</a> |
+                <a href="">我的京东</a> |
+                <a href="">京东会员</a> |
+                <a href="">企业采购</a> |
+                <a href="customer_service.html" target="_blank">客户服务</a> |
+                <a href="">网站导航</a> |
+                <a href="">手机京东</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <form action="search_result.html" target="_blank">
+                    <input type="text" name="q" placeholder="输入你想要的商品"><input type="submit" value="搜索">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                </form>
+            </li>
+            <li>
+                <a href="">买2免1</a>
+                <a href="">领500神卷</a>
+                <a href="">199减100</a>
+                <a href="">服装</a>
+                <a href="">ups电源</a>
+                <a href="">虎牌</a>
+                <a href="">母婴5折抢</a>
+                <a href="">取暖器</a>
+                <a href="">手机</a>
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

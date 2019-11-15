@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(228, 226, 226);
+        }
+        main{
+            margin: auto;
+            margin-top:10px;
+            width: 500px;
+            height: 700px;
+            background-color: white;
+            box-shadow: 1px 1px 4px 2px rgb(173, 171, 171);
+            padding:30px 100px 30px 100px;
+            box-sizing: border-box;
+        }
+        main p:nth-child(1){
+            font-size:40px;
+            padding-left: 100px;
+            
+        }
+        main p,main input{
+            width: 78%;
+        }
+        main input{
+            border: none;
+            border-bottom: 1px solid rgb(214, 211, 211);
+            padding-left: 30px;
+            padding-bottom: 15px; 
+        }
+        main input:nth-child(3){
+            background-image: url(../img/user.png);
+            background-repeat: no-repeat;
+        }
+        main input:nth-child(5){
+            background-image: url(../img/password.png);
+            background-repeat: no-repeat;
+        }
+        main a{
+            text-decoration: none;
+        }
+        main p:nth-child(6){
+            text-align: right;
+        }
+        main p:nth-child(6) a{
+            font-size:14px;
+            color: rgb(194, 189, 189);
+        }
+        main p:nth-child(7){
+            background: linear-gradient(-90deg,#99ffeb,#d580ff);
+            width:267px;
+            height:40px;
+            border-radius: 17px;
+            text-align: center;
+            padding-top:10px;
+            box-sizing: border-box;
+        }
+        main p:nth-child(7) a{
+            color: white;
+        }
+        main p:nth-child(8){
+            margin-top:60px;
+        }
+        main p:nth-child(8),main p:nth-child(9),main p:nth-child(10){
+            text-align: center;
+            padding-left:20px;
+        }
+        main p:nth-child(10) a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>登录</p>
+        <p>用户名</p>
+        <input type="text" required placeholder="请输入用户名">
+        <p>密码</p>
+        <input type="text" required placeholder="请输入密码">
+        <p><a href="">忘记密码?</a></p>
+        <p><a href="">登录</a></p>
+        <p>第三方登录</p>
+        <p>
+            <img src="../img/WeChat_logo.png" alt="">
+            <img src="../img/QQ_logo.png" alt="">
+            <img src="../img/xinlang_logo.png" alt="">
+        </p>
+        <p><a href="register.html">立即注册</a></p>
+    </main>
+    <script>
+    
+    </script>
+</body>
+</html>
