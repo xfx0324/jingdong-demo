@@ -91,6 +91,19 @@
         border-radius:20px;
         color: white;
     }
+    .scroll-img div span{
+        background-color: rgb(241, 237, 237);
+        color: red;
+        font-size: 45px;
+        position: absolute;
+        top:400px;
+    }
+    .scroll-img div span:nth-child(1){
+        left: 352px;
+    }
+    .scroll-img div span:nth-child(2){
+        left: 1270px;
+    }
     .section1-li2 dt{
         width: 100%;
         display: grid;

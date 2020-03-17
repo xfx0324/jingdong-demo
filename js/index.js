@@ -23,11 +23,12 @@ function carousel() {
     //加载时自动轮播
     var id = setInterval('init()', 1000)
 }
+
 var i = 0;
 
 function init() {
     var span = document.getElementsByClassName("imgSpan")
-    var img = document.getElementsByTagName("img");
+    var img = document.getElementsByClassName("img");
     for (let i = 0; i < 5; i++) {
         span[i].style.backgroundColor = "blue";
         img[i].style.display = "none"
@@ -40,6 +41,39 @@ function init() {
     }
 }
 carousel();
+
+//轮播图点击后退
+function backOne(){
+    var img = document.getElementsByClassName("img");
+    var flag=false;
+    var index;
+    for(let i=0;i<img.length;i++){
+        if(img[i].style.display=='block'){
+            flag=true;
+            index=i;
+            break;
+        }
+    }
+    console.log(i,flag)
+
+    if(flag){
+        for(let j=0;j<img.length;j++){
+            img[j].style.display='none'
+        }
+        if(index>=1){
+            img[index-1].style.display='block'
+        }
+        else{
+            img[img.length-1].style.display='block'
+        }
+    }
+}
+
+//轮播图点击前进
+function progress(){
+
+}
+
 //左边菜单栏缩放
 var section1Li1P = document.getElementsByClassName("section1-li1-p")
 for (let i = 0; i < section1Li1P.length; i++) {
@@ -60,7 +94,7 @@ for (let i = 0; i < section1Li1P.length; i++) {
 function countDown() {
     //倒计时分秒
     function countDownSta() {
-        var endTime = new Date(2019, 10, 18);
+        var endTime = new Date(2019, 10, 18,9,29);
         var currentTime = new Date();
         var countDownTime = Math.floor((endTime - currentTime) / 1000); //倒计总秒数
         // countDownTime--;
@@ -96,6 +130,6 @@ function countDown() {
 }
 
 countDown();
-//存一个空数组，方便点击购物车时产品的存储
+// 存一个空数组，方便点击购物车时产品的存储
 // var productArr=[]
-localStorage.setItem('shoppingList',JSON.stringify(productArr))
+// localStorage.setItem('shoppingList',JSON.stringify(productArr))

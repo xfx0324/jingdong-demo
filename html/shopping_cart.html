@@ -12,7 +12,7 @@
 <body>
     <object data="header_product.html" type=""></object>
     <main>
-        <p class="success">商品已成功加入购物车！</p>
+        <p class="success"></p>
         <table>
             <tr>
                 <th>全选<input type="checkbox" onclick="selectAll(this)" id="selectAll"></th>
@@ -25,8 +25,9 @@
             </tr>
         </table>
         <input type="button" value="删除所选" class="deleteSelect" onclick="deleteSelect()"><br>
-        <p class="allCount">总计：<span class="totalMoney">0</span></p>
-
+        <p class="allCount">总计：<span class="totalMoney">0.00</span></p>
+        <a href="search_result.html" id="selectProduct">查看商品详情</a>
+        <button id="settleButton" onclick="settle()">去购物车结算</button>
         <!-- <ul>
             <li>
                 <img src="../img/item-show-4.jpg" alt="">

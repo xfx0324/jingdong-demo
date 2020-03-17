@@ -124,7 +124,7 @@
         <ul>
             <li>送至珠海</li>
             <li>
-                <a href="login.html" target="_blank">你好，请登录</a>
+                <a href="login.html" target="_blank" id="username"></a>
                 <a href="register.html" target="_blank">免费注册</a> |
                 <a href="shopping_cart.html" target="_blank">我的购物车</a> |
                 <a href="">我的京东</a> |
@@ -167,7 +167,16 @@
         </ul>
     </div>
 
+<script>
+ var sessionUsers=JSON.parse(sessionStorage.getItem('users'))
+    var a=document.getElementById("username")
+    if(sessionUsers){
+        a.innerHTML='你好，欢迎'+sessionUsers.admin;
+    }else{
+        a.innerHTML='你好，请登录';
 
+    }
+</script>
 </body>
 
 </html>

@@ -67,6 +67,19 @@ table tr td:nth-child(7) input{
 table img{
     width: 70px;
 }
+#selectProduct{
+    background-color: white;
+    color: red;
+    padding:12px;
+    border: 1px solid white;
+    margin-left: 900px;
+}
+#settleButton{
+    background-color:red;
+    color:white;
+    padding:12px;
+    margin-left: 10px;
+}
 .deleteSelect{
     margin-left: 100px;
     margin-top:20px;

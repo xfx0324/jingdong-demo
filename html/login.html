@@ -79,11 +79,11 @@
     <main>
         <p>登录</p>
         <p>用户名</p>
-        <input type="text" required placeholder="请输入用户名">
+        <input type="text" required placeholder="请输入用户名" id="admin">
         <p>密码</p>
-        <input type="text" required placeholder="请输入密码">
+        <input type="text" required placeholder="请输入密码" id="pwd">
         <p><a href="">忘记密码?</a></p>
-        <p><a href="">登录</a></p>
+        <p><button onclick="login()">登录</button></p>
         <p>第三方登录</p>
         <p>
             <img src="../img/WeChat_logo.png" alt="">
@@ -93,7 +93,19 @@
         <p><a href="register.html">立即注册</a></p>
     </main>
     <script>
-    
+        function login(){
+            var users={admin:"1111",pwd:"1"}
+            sessionStorage.setItem('users',JSON.stringify(users))
+            var name=document.getElementById("admin")
+            var password=document.getElementById("pwd")
+            var sessionUsers=JSON.parse(sessionStorage.getItem('users'))
+            if(name.value==sessionUsers.admin&&password.value==sessionUsers.pwd){
+                location.href='index.html'
+            }
+            else{
+                alert("用户名或密码输入错误")
+            }
+        }
     </script>
 </body>
 </html>
